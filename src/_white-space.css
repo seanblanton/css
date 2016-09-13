@@ -1,0 +1,17 @@
+/*
+
+WHITE SPACE
+
+
+
+*/
+
+
+.whitespace-nowrap { white-space: nowrap; }
+.whitespace-pre { white-space: pre; }
+.whitespace-prewrap { white-space: pre-wrap }
+.whitespace-preline { white-space: pre-line; }
+
+
+.wordbreak-keep { word-break: keep-all; }
+.wordbreak-break { word-break: break-all; }

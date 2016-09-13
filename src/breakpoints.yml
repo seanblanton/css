@@ -1,0 +1,4 @@
+# breakpoints.yml
+s: "30rem"
+m: "64rem"
+l: "85rem"

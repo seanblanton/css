@@ -1,0 +1,28 @@
+/*
+
+MEDIA QUERIES
+
+
+*/
+
+@define-mixin respond-to $breakpoint {
+  @if $breakpoint == s  {
+    @mixin-content;
+    } @else {
+     @media (min-width: map($breakpoint)) {
+      @mixin-content;
+    }
+  }
+}
+
+
+
+@define-mixin prefixes {
+    @each $breakpoint in s, m, l {
+      @mixin respond-to $breakpoint {
+        .$(breakpoint)-{
+          @mixin-content;
+        }
+      }
+    }
+}

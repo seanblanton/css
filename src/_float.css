@@ -1,0 +1,28 @@
+/*
+
+FLOATS
+
+
+*/
+
+
+.float-l { float: left; }
+.float-r { float: right; }
+
+.clear { clear: both; }
+.clearl { clear: left; }
+.clearr { clear: both; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}

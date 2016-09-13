@@ -1,0 +1,12 @@
+/*
+
+TEXT TRANSFORMS
+
+
+
+*/
+
+.ttu { text-transform: uppercase; }
+.ttl { text-transform: lowercase; }
+.ttc { text-transform: capitalize; }
+.ttn { text-transform: none; }

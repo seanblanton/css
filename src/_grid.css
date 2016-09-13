@@ -1,0 +1,20 @@
+/*
+
+FONT WEIGHTS
+
+*/
+
+$columns: 12;
+$gutters: 16px;
+
+@define-mixin grid $cols {
+    .col$(i)of$(columns) {
+     width: calc((100% / $columns ) * $cols);
+   }
+}
+
+@for $i in 1 to $columns {
+  @mixin grid $i {}
+}
+
+
