@@ -1,0 +1,50 @@
+
+// Variables
+
+//
+
+// Font Definitions
+$fontSizes: 48, 32, 24, 20, 14, 12;
+
+// Layouts
+$spaces: 0, 4, 8, 16, 24, 32, 64, 128;
+$columns: 12;
+$gutters: 16px;
+
+// Containers
+$borderWidths: 0, 1, 2, 3, 4;
+$borderRadii: 0, 2, 3, 4, 50;
+
+// Colors
+$colors: (
+    white: rgba(255,255,255,1),
+    black: rgba(0,0,0,1),
+    blue: rgba(3,110,200,1),
+    red: rgba(245,49,10,1),
+    orange: rgba(255,158,61,1),
+    gray: rgba(164,179,179,1)
+);
+
+// Breakpoints Vars
+$width-xs: 0;
+$width-s: 37rem;
+$width-m: 45rem;
+$width-l: 56rem;
+$width-xlg: 72rem;
+
+// breakpoints
+$breakpoints: (
+  xs: $width-xs,
+  s: $width-s,
+  m: $width-m,
+  l: $width-l,
+  xlg: $width-xlg,
+);
+
+// line length
+$measure-s: 15rem;
+$measure-m: 36rem;
+$measure-l: 40rem;
+
+
+

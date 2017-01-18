@@ -1,0 +1,33 @@
+
+// Grid Layout Utility Classes
+// ----------------------------
+
+
+@mixin grid($cols) {
+        &col#{$cols}of#{$columns}  {
+         width: ((100% / $columns ) * $cols) !important;
+         @content;
+    }
+}
+
+  @include prefix {
+    @for $i from 1 through $columns{
+      @include grid($i) {  }
+    }
+}
+
+
+// Responsive Max-width utility classes
+@include prefix {
+  @for $i from 1 through length($spaces) {
+      $size: nth($spaces, $i);
+      // keep the container from growing larger than this
+      &maxw#{($i - 1)} { max-width:  #{$size}px !important; }
+      // keep the container from shrinking smaller than this
+      &minw#{($i - 1)} { min-width:  #{$size}px !important; }
+  }
+}
+
+@include prefix {
+    &minh100 { min-height: 100% !important; }
+}

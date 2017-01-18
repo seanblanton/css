@@ -1,0 +1,49 @@
+/*
+
+Padding space utilities
+
+Base:
+  padding = padding
+
+Direction:
+  t = top
+  b = bottom
+  l = left
+  r = right
+  x = left / right
+  y = top / bottom
+  a = all
+
+*/
+
+/* Add breakpoint prefixes to classnames */
+@include prefix {
+
+  @for $i from 1 through length($spaces) {
+    $size: nth($spaces, $i);
+    $scale: ($i - 1);
+
+      // set a {$scale} padding on all sides at breakpoint {$breakpoint}
+      &pa#{$scale} {  padding:          #{$size}px !important; }
+      // set a {$scale} padding on the left sides at breakpoint {$breakpoint}
+      &pl#{$scale} {  padding-left:     #{$size}px !important; }
+      // set a {$scale} padding on the right sides at breakpoint {$breakpoint}
+      &pr#{$scale} {  padding-right:    #{$size}px !important; }
+      // set a {$scale} padding on the top side at breakpoint {$breakpoint}
+      &pt#{$scale} {  padding-top:      #{$size}px !important; }
+      // set a {$scale} padding on the bottom side at breakpoint {$breakpoint}
+      &pb#{$scale} {  padding-bottom:   #{$size}px !important; }
+
+      // set a {$scale} padding on the left and right side at breakpoint {$breakpoint}
+      &px#{$scale} {
+        padding-left:        #{$size}px !important;
+        padding-right:       #{$size}px !important;
+      }
+
+      // set a {$scale} padding on the top and bottom side at breakpoint {$breakpoint}
+      &py#{$scale} {
+        padding-top:         #{$size}px !important;
+        padding-bottom:      #{$size}px !important;
+      }
+  }
+}

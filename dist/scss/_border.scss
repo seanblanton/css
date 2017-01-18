@@ -1,0 +1,57 @@
+
+// Border Utility Classes
+// ----------------------------
+
+.bs-none        { border-style: none !important; }
+.bs-solid       { border-style: solid !important; }
+.bs-dotted      { border-style: dotted !important; }
+.bs-dashed      { border-style: dashed !important; }
+.bs-inset       { border-style: inset !important; }
+.bs-outset      { border-style: outset !important; }
+
+.bs-l-none      { border-left-style: none !important; }
+.bs-l-solid     { border-left-style: solid !important; }
+.bs-l-dotted    { border-left-style: dotted !important; }
+.bs-l-dashed    { border-left-style: dashed !important; }
+.bs-l-inset     { border-left-style: inset !important; }
+.bs-l-outset    { border-left-style: outset !important; }
+
+.bs-r-none      { border-right-style: none !important; }
+.bs-r-solid     { border-right-style: solid !important; }
+.bs-r-dotted    { border-right-style: dotted !important; }
+.bs-r-dashed    { border-right-style: dashed !important; }
+.bs-r-inset     { border-right-style: inset !important; }
+.bs-r-outset    { border-right-style: outset !important; }
+
+.bs-b-none      { border-bottom-style: none !important; }
+.bs-b-solid     { border-bottom-style: solid !important; }
+.bs-b-dotted    { border-bottom-style: dotted !important; }
+.bs-b-dashed    { border-bottom-style: dashed !important; }
+.bs-b-inset     { border-bottom-style: inset !important; }
+.bs-b-outset    { border-bottom-style: outset !important; }
+
+.bs-t-none      { border-top-style: none !important; }
+.bs-t-solid     { border-top-style: solid !important; }
+.bs-t-dotted    { border-top-style: dotted !important; }
+.bs-t-dashed    { border-top-style: dashed !important; }
+.bs-t-inset     { border-top-style: inset !important; }
+.bs-t-outset    { border-top-style: outset !important; }
+
+
+// Border Width Utilities
+@for $i from 1 through length($borderWidths) {
+    $size: nth($borderWidths, $i);
+    $scale: ($i - 1);
+
+    .bw#{$scale} { border-width: #{$size}px !important; }
+
+}
+
+// Border Radius itilities
+@for $i from 1 through length($borderRadii) {
+  $size: nth($borderRadii, $i);
+  $scale: ($i - 1);
+
+  .br#{$scale} { border-radius: #{$size}px !important; }
+
+}
