@@ -1,0 +1,35 @@
+
+// Position Utility Classes
+// ----------------------------
+
+
+// Responsive position utilites
+@include prefix {
+
+  // Set position to static
+  &static     { position: static !important; }
+  // Set position to relative
+  &relative   { position: relative !important; }
+  // Set position to fixed
+  &fixed      { position: fixed !important; }
+  // Set position to absolute
+  &absolute   { position: absolute !important; }
+}
+
+// Positions
+@include prefix {
+
+  @for $i from 1 through length($spaces) {
+    $size: nth($spaces, $i);
+    $scale: ($i - 1);
+
+    // set top to {$size}px at breakpoint {$breakpoint}
+    &top-#{$scale}    { top:    #{$size}px !important; }
+    // set bottom to {$size}px at breakpoint {$breakpoint}
+    &bottom-#{$scale} { bottom: #{$size}px !important; }
+    // set left to {$size}px at breakpoint {$breakpoint}
+    &left-#{$scale}   { left:   #{$size}px !important; }
+    // set right to {$size}px at breakpoint {$breakpoint}
+    &right-#{$scale}  { right:  #{$size}px !important; }
+  }
+}

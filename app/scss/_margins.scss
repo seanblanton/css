@@ -1,0 +1,62 @@
+/*
+
+Margin space utilities
+
+Base:
+  m = margin
+
+Direction:
+  t = top
+  b = bottom
+  l = left
+  r = right
+  x = left / right
+  y = top / bottom
+  a = all
+
+*/
+
+// Add breakpoint prefixes to classnames
+@include prefix {
+
+  @for $i from 1 through length($spaces) {
+    $size: nth($spaces, $i);
+    $scale: ($i - 1);
+
+      // set a {$scale} margin on all sides at breakpoint {$breakpoint}
+      &ma#{$scale} {  margin:          #{$size}px !important; }
+      // set a {$scale} margin on the left side at breakpoint {$breakpoint}
+      &ml#{$scale} {  margin-left:     #{$size}px !important; }
+      // set a {$scale} margin on the right side at breakpoint {$breakpoint}
+      &mr#{$scale} {  margin-right:    #{$size}px !important; }
+      // set a {$scale} margin on the top at breakpoint {$breakpoint}
+      &mt#{$scale} {  margin-top:      #{$size}px !important; }
+      // set a {$scale} margin on the bottom at breakpoint {$breakpoint}
+      &mb#{$scale} {  margin-bottom:   #{$size}px !important; }
+
+      // set a {$scale} margin on the left and right sides at breakpoint {$breakpoint}
+      &mx#{$scale} {
+        margin-left:     #{$size}px !important;
+        margin-right:    #{$size}px !important;
+      }
+
+      // set a {$scale} margin on the top and bottom at breakpoint {$breakpoint}
+      &my#{$scale} {
+        margin-top:      #{$size}px !important;
+        margin-bottom:   #{$size}px !important;
+      }
+  }
+
+  // Set automatic margin on left
+  &ml-auto {   margin-left: auto !important; }
+
+  // Set automatic margin on right
+  &mr-auto {   margin-right: auto !important; }
+
+  // Set automatic margin on left and right
+  &mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}

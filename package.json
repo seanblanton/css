@@ -1,33 +1,29 @@
 {
-  "name": "csskit",
+  "name": "new-css-framework",
   "version": "1.0.0",
-  "description": "* Should not be deeply nested   * Everything should be as usable as possible   * It should be hard to break something   * Everything should be responsive",
+  "description": "Css framework",
   "main": "index.js",
   "scripts": {
-    "test": "\"echo \"Error: no test specified\" && exit 1\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.15.0",
-    "cssnano": "^3.7.4",
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
     "gulp-cssnano": "^2.1.2",
-    "gulp-postcss": "^6.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-scss": "^1.4.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "postcss-conditionals": "^2.0.2",
-    "postcss-custom-media": "^5.0.1",
-    "postcss-each": "^0.9.3",
-    "postcss-for": "^2.1.1",
-    "postcss-map": "^0.8.0",
-    "postcss-mixins": "^5.2.0",
-    "postcss-nested": "^1.0.0",
-    "postcss-responsify": "^1.0.3",
-    "postcss-scss": "^0.3.0",
-    "postcss-simple-vars": "^3.0.0",
-    "precss": "^1.4.0"
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
   }
 }

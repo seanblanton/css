@@ -1,0 +1,8 @@
+
+// Text Overflow Utility Classes
+// ----------------------------
+
+.overflow-scroll   { text-overflow: scroll !important; }
+.overflow-e        { text-overflow: ellipsis !important; }
+.overflow-c        { text-overflow: clip !important; }
+.overflow-dash     { text-overflow: "—" !important; }
