@@ -1,0 +1,28 @@
+
+// Display Utilities
+// ----------------------------
+
+// Responsive display utilities
+@include prefix {
+
+  // Include to cause an element to hide at a specific breakpoint
+  &hide                   {   display: none !important; }
+
+  // display utilities
+  &block                  {   display: block !important; }
+  &ib                     {   display: inline-block !important; }
+  &inline                 {   display: inline !important; }
+
+  // table utilities
+  &table                  {   display: table !important; }
+  &table-cell             {   display: table-cell !important; }
+  &table-fixed            {   table-layout: fixed !important; }
+
+  // vertical alignment
+  &vertical-align-top     {   vertical-align: top !important; }
+  &vertical-align-middle  {   vertical-align: middle !important; }
+  &vertical-align-bottom  {   vertical-align: bottom !important; }
+
+}
+
+.border-box {   box-sizing: border-box !important; }

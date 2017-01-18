@@ -1,0 +1,19 @@
+
+// Font Utility Classes
+// ----------------------------
+
+// Floats
+.float-l 	  { float: left !important; }
+.float-r  	{ float: right !important; }
+.float-none { float: none !important; }
+
+// Clear Floats
+.clear 		{ clear: both !important; }
+.clear-l 	{ clear: left !important; }
+.clear-r 	{ clear: both !important; }
+
+// Clearfix to create new block elements
+.clearfix:before,
+.clearfix:after 	{	content: ""; display: table !important; }
+.clearfix:after 	{	clear: both !important; }
+.clearfix 			  {	zoom: 1 !important; }  /* ie 6/7 */

@@ -1,0 +1,73 @@
+
+// Color Tokens
+// ----------------------------
+
+@each $color, $value in $colors {
+
+        // Text Colors
+        .color-#{$color}    { color: rgba($value, 1.0) !important; }
+        .color-#{$color}90  { color: rgba($value, 0.9) !important; }
+        .color-#{$color}80  { color: rgba($value, 0.8) !important; }
+        .color-#{$color}70  { color: rgba($value, 0.7) !important; }
+        .color-#{$color}60  { color: rgba($value, 0.6) !important; }
+        .color-#{$color}50  { color: rgba($value, 0.5) !important; }
+        .color-#{$color}40  { color: rgba($value, 0.4) !important; }
+        .color-#{$color}30  { color: rgba($value, 0.3) !important; }
+        .color-#{$color}20  { color: rgba($value, 0.2) !important; }
+        .color-#{$color}10  { color: rgba($value, 0.1) !important; }
+        .color-#{$color}05  { color: rgba($value, 0.05) !important; }
+
+        // Background colors
+        .bg-#{$color}       { background-color: rgba($value, 1.0) !important; }
+        .bg-#{$color}90     { background-color: rgba($value, 0.9) !important; }
+        .bg-#{$color}80     { background-color: rgba($value, 0.8) !important; }
+        .bg-#{$color}70     { background-color: rgba($value, 0.7) !important; }
+        .bg-#{$color}60     { background-color: rgba($value, 0.6) !important; }
+        .bg-#{$color}50     { background-color: rgba($value, 0.5) !important; }
+        .bg-#{$color}40     { background-color: rgba($value, 0.4) !important; }
+        .bg-#{$color}30     { background-color: rgba($value, 0.3) !important; }
+        .bg-#{$color}20     { background-color: rgba($value, 0.2) !important; }
+        .bg-#{$color}10     { background-color: rgba($value, 0.1) !important; }
+        .bg-#{$color}05     { background-color: rgba($value, 0.05) !important; }
+
+        // Border colors
+        .border-#{$color}    { border-color: rgba($value, 1.0) !important; }
+        .border-#{$color}90  { border-color: rgba($value, 0.9) !important; }
+        .border-#{$color}80  { border-color: rgba($value, 0.8) !important; }
+        .border-#{$color}70  { border-color: rgba($value, 0.7) !important; }
+        .border-#{$color}60  { border-color: rgba($value, 0.6) !important; }
+        .border-#{$color}50  { border-color: rgba($value, 0.5) !important; }
+        .border-#{$color}40  { border-color: rgba($value, 0.4) !important; }
+        .border-#{$color}30  { border-color: rgba($value, 0.3) !important; }
+        .border-#{$color}20  { border-color: rgba($value, 0.2) !important; }
+        .border-#{$color}10  { border-color: rgba($value, 0.1) !important; }
+        .border-#{$color}05  { border-color: rgba($value, 0.05) !important; }
+
+        // Border colors
+        .fill-#{$color}    { fill: rgba($value, 1.0) !important; }
+        .fill-#{$color}90  { fill: rgba($value, 0.9) !important; }
+        .fill-#{$color}80  { fill: rgba($value, 0.8) !important; }
+        .fill-#{$color}70  { fill: rgba($value, 0.7) !important; }
+        .fill-#{$color}60  { fill: rgba($value, 0.6) !important; }
+        .fill-#{$color}50  { fill: rgba($value, 0.5) !important; }
+        .fill-#{$color}40  { fill: rgba($value, 0.4) !important; }
+        .fill-#{$color}30  { fill: rgba($value, 0.3) !important; }
+        .fill-#{$color}20  { fill: rgba($value, 0.2) !important; }
+        .fill-#{$color}10  { fill: rgba($value, 0.1) !important; }
+        .fill-#{$color}05  { fill: rgba($value, 0.05) !important; }
+
+        // Border colors
+        .stroke-#{$color}    { stroke: rgba($value, 1.0) !important; }
+        .stroke-#{$color}90  { stroke: rgba($value, 0.9) !important; }
+        .stroke-#{$color}80  { stroke: rgba($value, 0.8) !important; }
+        .stroke-#{$color}70  { stroke: rgba($value, 0.7) !important; }
+        .stroke-#{$color}60  { stroke: rgba($value, 0.6) !important; }
+        .stroke-#{$color}50  { stroke: rgba($value, 0.5) !important; }
+        .stroke-#{$color}40  { stroke: rgba($value, 0.4) !important; }
+        .stroke-#{$color}30  { stroke: rgba($value, 0.3) !important; }
+        .stroke-#{$color}20  { stroke: rgba($value, 0.2) !important; }
+        .stroke-#{$color}10  { stroke: rgba($value, 0.1) !important; }
+        .stroke-#{$color}05  { stroke: rgba($value, 0.05) !important; }
+
+
+}
