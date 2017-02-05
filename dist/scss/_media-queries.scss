@@ -2,6 +2,9 @@
 // Media Query Mixins
 // ----------------------------
 
+html, body { box-sizing: border-box !important;
+             height: 100%; }
+
 // Add a media query at this point
 @mixin respond-to($breakpoint, $value) {
   @if $value == null  {

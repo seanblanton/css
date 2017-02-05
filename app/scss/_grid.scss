@@ -2,6 +2,8 @@
 // Grid Layout Utility Classes
 // ----------------------------
 
+// $columns: 12;
+// $gutters: 16px;
 
 @mixin grid($cols) {
         &col#{$cols}of#{$columns}  {
@@ -17,17 +19,3 @@
 }
 
 
-// Responsive Max-width utility classes
-@include prefix {
-  @for $i from 1 through length($spaces) {
-      $size: nth($spaces, $i);
-      // keep the container from growing larger than this
-      &maxw#{($i - 1)} { max-width:  #{$size}px !important; }
-      // keep the container from shrinking smaller than this
-      &minw#{($i - 1)} { min-width:  #{$size}px !important; }
-  }
-}
-
-@include prefix {
-    &minh100 { min-height: 100% !important; }
-}

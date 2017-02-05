@@ -2,13 +2,20 @@
 // Hyperlink Utility Classes
 // ----------------------------
 
-.link {
+.link, .link:link, {
     text-decoration: none !important;
+    color: #F68000 !important;
 }
 
-.link:link,
+.link:hover{
+  color: #D76E00 !important;
+}
+
 .link:visited,
 .link:active,
 .link:focus {
     transition: all 0.1s ease !important;
+    color: #00B0C8 !important;
 }
+
+

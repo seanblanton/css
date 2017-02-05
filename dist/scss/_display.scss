@@ -16,6 +16,7 @@
   // table utilities
   &table                  {   display: table !important; }
   &table-cell             {   display: table-cell !important; }
+  &table-row              {   display: table-row !important; }
   &table-fixed            {   table-layout: fixed !important; }
 
   // vertical alignment
@@ -23,6 +24,7 @@
   &vertical-align-middle  {   vertical-align: middle !important; }
   &vertical-align-bottom  {   vertical-align: bottom !important; }
 
+  &overflow-hidden        {   overflow: hidden !important; }
 }
 
 .border-box {   box-sizing: border-box !important; }

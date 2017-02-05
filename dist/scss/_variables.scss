@@ -4,10 +4,10 @@
 //
 
 // Font Definitions
-$fontSizes: 48, 32, 24, 20, 14, 12;
+$fontSizes: 40, 32, 24, 20, 16, 14, 12;
 
 // Layouts
-$spaces: 0, 4, 8, 16, 24, 32, 64, 128;
+$spaces: 0, 4, 8, 16, 24, 32, 64, 128, 256, 320, 384, 448, 775 ;
 $columns: 12;
 $gutters: 16px;
 
@@ -16,20 +16,103 @@ $borderWidths: 0, 1, 2, 3, 4;
 $borderRadii: 0, 2, 3, 4, 50;
 
 // Colors
+// $colors: (
+//     white: rgba(255,255,255,1),
+//     black: rgba(0,0,0,1),
+//     blue: rgba(3,110,200,1),
+//     red: rgba(245,49,10,1),
+//     orange: rgba(255,158,61,1),
+//     gray: rgba(164,179,179,1)
+// );
+
 $colors: (
-    white: rgba(255,255,255,1),
-    black: rgba(0,0,0,1),
-    blue: rgba(3,110,200,1),
-    red: rgba(245,49,10,1),
-    orange: rgba(255,158,61,1),
-    gray: rgba(164,179,179,1)
+        red0: #fff3f1,
+        red1: #ffdfd8,
+        red2: #ffcbc1,
+        red3: #ffb8aa,
+        red4: #ffa18f,
+        red5: #ff8670,
+        red6: #ff6248,
+        red7: #f84f35,
+        red8: #cc3b26,
+        red9: #8d1f11,
+        orange0: #fff4ea,
+        orange1: #ffe5c8,
+        orange2: #ffd5a7,
+        orange3: #ffc483,
+        orange4: #ffaf5a,
+        orange5: #ff9623,
+        orange6: #f68000,
+        orange7: #d76e00,
+        orange8: #af5800,
+        orange9: #763800,
+        yellow0: #fff6d4,
+        yellow1: #ffe991,
+        yellow2: #ffd641,
+        yellow3: #ffc300,
+        yellow4: #eeaf00,
+        yellow5: #da9900,
+        yellow6: #c48100,
+        yellow7: #aa6700,
+        yellow8: #8a4b00,
+        yellow9: #5b2b00,
+        green0: #ebf9f2,
+        green1: #caf4df,
+        green2: #a8edcb,
+        green3: #82e4b5,
+        green4: #54d99c,
+        green5: #00cc7d,
+        green6: #00b76f,
+        green7: #009f5f,
+        green8: #00814b,
+        green9: #00562f,
+        mint0: #ebf8f6,
+        mint1: #c9f3ed,
+        mint2: #a7ebe1,
+        mint3: #81e2d2,
+        mint4: #51d7c3,
+        mint5: #00c9b1,
+        mint6: #00b59e,
+        mint7: #009e89,
+        mint8: #00806f,
+        mint9: #005549,
+        cyan0: #eff7f9,
+        cyan1: #d2f0f6,
+        cyan2: #b6e6f1,
+        cyan3: #97dbe9,
+        cyan4: #75cfe1,
+        cyan5: #47c1d7,
+        cyan6: #00b0c8,
+        cyan7: #0099b0,
+        cyan8: #007c92,
+        cyan9: #005363,
+        gray00: #FAFBFB,
+        gray0: #f5f6f6,
+        gray1: #e9eaec,
+        gray2: #dbdee0,
+        gray3: #cdd1d4,
+        gray4: #bec3c7,
+        gray5: #adb3b8,
+        gray6: #9ba0a5,
+        gray7: #868b8f,
+        gray8: #6d7073,
+        gray9: #47494b,
+        white: #FFFFFF,
+        facebook : #3B5998,
+        twitter : #55ACEE,
+        google : #DD4B39,
+        linkedin : #0077B5,
+        pinterest : #BD081C,
+        tumblr : #36465D,
+        youtube : #CD201F,
+        instagram: #517FA4,
 );
 
 // Breakpoints Vars
 $width-xs: 0;
 $width-s: 37rem;
 $width-m: 45rem;
-$width-l: 56rem;
+$width-l: 64rem;
 $width-xlg: 72rem;
 
 // breakpoints
@@ -42,8 +125,8 @@ $breakpoints: (
 );
 
 // line length
-$measure-s: 15rem;
-$measure-m: 36rem;
+$measure-s: 18rem;
+$measure-m: 30rem;
 $measure-l: 40rem;
 
 

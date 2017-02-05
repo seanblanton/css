@@ -25,7 +25,8 @@ Modifiders:
 
 @include prefix {
     @for $i from 1 through length($fontSizes) {
-      &fs#{$i} { font-size: nth($fontSizes, $i) + px !important; }
+      &fs#{($i - 1)} { font-size: nth($fontSizes, $i) + px !important; }
   }
 }
 
+p { font-size: nth($fontSizes, 6) + px }
